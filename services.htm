@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/style.css">
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="img/profile.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="pr.png" type="image/x-icon">
 
     <!-- Fontawesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
@@ -22,7 +22,7 @@
 
 <body>
     <!-- Website Layout -->
-    <ul class="website_container">
+    <div class="website_container">
 
         <!-- Global Menu -->
         <div id="global_menu_button_container">
@@ -35,6 +35,7 @@
                 <i class="fa fa-close" id="global_menu_close_button"></i>
                 <li><a href="/"><i class="fa fa-home"></i> About</a></li>
                 <li><a href="resume.html"><i class="fas fa-file-alt"></i> Resume</a></li>
+                
                 <li><a href="services.html"><i class="fas fa-cog"></i> Services</a></li>
                 <li><a href="contact.html"><i class="fas fa-phone-square"></i> Contact</a></li>
             </div>
@@ -42,13 +43,11 @@
 
         <!--x Global Menu x-->
 
-
-
         <!-- sidebar -->
         <div class="sidebar_container">
             <!-- Sidebar Image -->
             <div class="image">
-                <img src="IMG/pr.png" alt="Rishabh Tripathi">
+                <img src="img/pr.png" alt="Rishabh Tripathi">
                 <div class="right_image_box"></div>
                 <div class="left_image_box"></div>
             </div>
@@ -57,11 +56,7 @@
             <div class="sidebar_content">
                 <!-- Long name can be applied so easily -->
                 <h1>Rishabh Tripathi</h1>
-                <p>
-                    Engineering 
-                    Student
-
-                </p>
+                <p>Data Scientist</p>
                 <!-- Social Medias -->
                 <div class="social_media">
                     <a href="https://www.linkedin.com/in/rishabh-tripathi-403420210/"><i class="fab fa-linkedin"></i></a>
@@ -77,10 +72,10 @@
 
             <!-- Sidebar Navigation -->
             <ul class="sidebar_navigation" id="sidebar_navigation">
-                <li><a href="/" class="active">About</a></li>
+                <li><a href="/">About</a></li>
                 <li><a href="resume.html">Resume</a></li>
                 
-                <li><a href="services.html">Services</a></li>
+                <li><a href="services.html" class="active">Services</a></li>
                 <li><a href="contact.html">Contact</a></li>
 
             </ul>
@@ -88,38 +83,56 @@
         </div>
         <!-- content -->
         <div class="content_container">
-            <!-- About Page -->
-            <div class="about_page">
-                <h2 class="title">About <span>Me</span></h2>
+            <!-- Services Page -->
+            <div class="services_page">
+                <h2 class="title">My <span>Services</span></h2>
                 <hr class="line">
-                <div class="about_content">
-                    <p class="about_text">I am Rishabh Tripathi. I am an engneering stduent of GLA University. I am currently in IInd Year. My course is computer science and also specilization in Artificial Intelligence and Machine Learning</p>
+                <!-- Services Row -->
+                <div class="services_container">
+                    <div class="services_box">
+                        <i class="fas fa-tablet-alt"></i>
+                        <h3 class="services_title">Machine Learning  Model Building</h3>
+                        <p class="services_text">Machine Learning model based project development, training and deployment.</p>
+                    </div>
+                    <div class="services_box">
+                        <i class="fas fa-globe"></i>
+                        <h3 class="services_title">Web Development</h3>
+                        <p class="services_text">Web Development Project s using HTML, CSS and JavaScript.</p>
+                    </div>
                 </div>
-                <div class="about_profile">
-                    <ul class="left_profile">
-                        <li><span class="profile_title">Date of Birth</span><span>July 23, 2005</span></li>
-                        <li><span class="profile_title">Gender</span><span>Male</span></li>
-                        <li><span class="profile_title">Age</span><span>20 Years Old</span></li>
-                        <li><span class="profile_title">Maritial Status</span><span>Unmarried</span></li>
-                        <li><span class="profile_title">Nationality</span><span>Indian</span></li>
-                        <li><span class="profile_title">Religion</span><span>Hindu</span></li>
-                    </ul>
 
-                    <ul class="right_profile">
-                        <li><span class="profile_title">Profession</span><span>Data Scientist</span></li>
-                        <li><span class="profile_title">Address</span><span>Uttar Pradesh, India</span></li>
-                        <li><span class="profile_title">Contact</span><span>+91-9984845854</span></li>
-                        <li><span class="profile_title">Email</span><span>rishabhtripathi.9984@gmail.com</span></li>
-                        
-                        <li><span class="profile_title">Freelance</span><span>Available</span></li>
-                    </ul>
+                <div class="services_container">
+                    <div class="services_box">
+                        <i class="fas fa-pencil-ruler"></i>
+                        <h3 class="services_title">Ms-Excel</h3>
+                        <p class="services_text">Data Analysis from given data using excel tool. </p>
+                    </div>
+                    <div class="services_box">
+                        <i class="fas fa-drafting-compass"></i>
+                        <h3 class="services_title">Logo Designing</h3>
+                        <p class="services_text">Logo  design for any business, personal or organization.</p>
+                    </div>
+                </div>
+
+                <div class="services_container">
+                    <div class="services_box">
+                        <i class="fab fa-figma"></i>
+                        <h3 class="services_title">Powerpoint Designng</h3>
+                        <p class="services_text">Experience in powerpoint and presentation of professional topic </p>
+                    </div>
+                    <div class="services_box">
+                        <i class="fas fa-search-location"></i>
+                        <h3 class="services_title">Content Writing</h3>
+                        <p class="services_text">Content writing for organization and  blogging websites.</p>
+                    </div>
                 </div>
 
             </div>
         </div>
+    </div>
 
 
-        <script src="js/script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
